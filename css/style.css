@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 1158px;
+    width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -53,6 +53,7 @@ img {
 /*-----------------navigation------------*/
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container{
@@ -141,10 +142,11 @@ padding: 24px 0 24px;
 .hero {
     padding: 188px 0; 
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.png);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 
 
@@ -209,7 +211,17 @@ margin-left: auto; margin-right: auto;
       margin: -1px;
   }
 
-  .about-soc-link:hover  {
+  .about-soc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius:  4px ;
+    margin-bottom: 8px;
+  }
+
+  /* .about-soc-link:hover  {
     border-color: cadetblue;
 }
 
@@ -223,7 +235,7 @@ margin-left: auto; margin-right: auto;
 
 .about-soc-link:focus.about-sco-icons {
     fill: cadetblue;
-}
+} */
 
   .about-sco-icons {
     width: 64px;
@@ -231,14 +243,7 @@ margin-left: auto; margin-right: auto;
   }
 
   .about-soc-link {
-    width: 264px;
-height: 112px;
-    background: #F4F4FD;
-border:  4px ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+
   }
 
 .about-container{
@@ -320,7 +325,7 @@ margin-bottom: 72px;
 
 .card-wrap {
     padding: 32px 16px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 .team-list {
     display: flex;
@@ -332,6 +337,7 @@ margin-bottom: 72px;
     background-color: var(--background-color);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -376,16 +382,17 @@ text-align: center;
 }
 
 .team-soc-link:hover {
-    background-color: salmon;
+    background-color: #404BBF;
 }
 
 .team-soc-link:focus{
-    background-color: salmon;
+    background-color: #404BBF;
 }
 
 .team-soc-icons {
     width: 16px;
     height: 16px;
+    fill: var(--background-title-color);
 }
 
 /*--------------------footer---------------------------*/
@@ -396,6 +403,11 @@ text-align: center;
 
 .footer-container {
     display: flex;
+    align-items: baseline;
+}
+
+.footer-list {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -426,11 +438,11 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--text-color);
 max-width: 264px;
+margin-bottom: 16px;
 }
 
 .footer-soc-container {
-    margin-left: 120px;
-   
+    
 }
 
 .footer-soc-list {
@@ -469,14 +481,15 @@ color: var(--background-color);
 .footer-soc-icons {
     width: 24px;
     height: 24px;
+    fill: var(--background-title-color);
 }
 
 .footer-soc-link:hover {
-    background-color: salmon;
+    background-color: #31d0aa;
 }
 
 .footer-soc-link:focus {
-    background-color: salmon;
+    bbackground-color: #31d0aa;
 }
 
 /*-----------------customers-----------------*/
@@ -488,7 +501,7 @@ padding-bottom: 120px;
 
 .customers-title {
     font-size: 36px;
-line-height: 1.1;
+line-height: 1.11;
 letter-spacing: 0.02em;
 color: var(--title-color);
 display: flex;
@@ -516,28 +529,30 @@ border-radius: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
+color: #8E8F99;
 }
 
-.customers-link:hover  {
-    border-color: cadetblue;
+.customers-link:hover   {
+    border-color: var(--hover-color);
 }
 
-.customers-link:hover.customers-icon {
-    fill: cadetblue;
+.customers-icon:hover.customers-link {
+    fill: var(--hover-color);
 }
 
 .customers-link:focus  {
-    border-color: cadetblue;
+    border-color: var(--hover-color);
 }
 
 .customers-link:focus.customers-icon {
-    fill: cadetblue;
+    fill: var(--hover-color);
 }
 
 
 .customers-icon {
     width: 104px;
     height: 56px;
+    fill: currentColor;
 }
 
 
@@ -606,6 +621,8 @@ color: var(--title-color);
     cursor: pointer;
 }
 
+
+
 .btn-panel {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -625,12 +642,16 @@ color: var(--title-color);
     color: var(--background-color);
     background-color:  #404BBF;
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 .btn-panel:focus {
     color: var(--background-color);
     background-color:  var(--hover-color); 
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 /*---------Images--------*/
@@ -643,9 +664,7 @@ color: var(--title-color);
     border-top: none;
 }
 
-.image-card:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 .image-list {
     display: flex;
@@ -664,10 +683,18 @@ color: var(--title-color);
     text-decoration: none
 }
 
+.image-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.image-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .image-item {
+    display: block;
     width: calc((100% - 48px) / 3);
-    text-decoration: none
-    
+    text-decoration: none   
 }
 
 .image-title {
