@@ -539,21 +539,14 @@ color: #8E8F99;
 
 .customers-link:hover   {
     border-color: #404bbf;
-}
-
-.customers-link:hover .customers-icon{
     color: #404bbf;
 }
+
 
 .customers-link:focus  {
     border-color: #404bbf;
-}
-
-.customers-link:focus .customers-icon  {
     color: #404bbf;
 }
-
-
 
 /*-------Portfolio------------*/
 
