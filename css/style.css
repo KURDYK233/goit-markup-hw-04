@@ -141,11 +141,12 @@ padding: 24px 0 24px;
 /*--------------------------HERO----------------------*/
 .hero {
     padding: 188px 0 188px 0; 
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\)\ \(1\).jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\)\ \(1\).jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;  
+    margin: 0 auto;
 }
 
 
@@ -195,6 +196,7 @@ margin-left: auto; margin-right: auto;
 /*--------------------About---------------------------*/
 .about {
     padding: 120px 0 120px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -531,11 +533,15 @@ justify-content: center;
 color: #8E8F99;
 }
 
+.customers-icon {
+    fill: currentColor;
+}
+
 .customers-link:hover   {
     border-color: #404bbf;
 }
 
-.customers-icon:hover {
+.customers-link:hover .customers-icon{
     color: #404bbf;
 }
 
@@ -543,13 +549,8 @@ color: #8E8F99;
     border-color: #404bbf;
 }
 
-.customers-icon:focus {
-    color: #404bbf; 
-}
-
-
-.customers-icon {
-    fill: currentColor;
+.customers-link:focus .customers-icon  {
+    color: #404bbf;
 }
 
 
