@@ -141,18 +141,18 @@ padding: 24px 0 24px;
 /*--------------------------HERO----------------------*/
 .hero {
     padding: 188px 0; 
-    text-align: center;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+       
 }
 
 
 
 .hero-container{
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -331,6 +331,7 @@ margin-bottom: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
+    
 }
 
 .team-item {
@@ -390,8 +391,7 @@ text-align: center;
 }
 
 .team-soc-icons {
-    width: 16px;
-    height: 16px;
+    
     fill: var(--background-title-color);
 }
 
@@ -476,12 +476,12 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--background-color);
+margin-bottom: 16px;
 }
 
 .footer-soc-icons {
-    width: 24px;
-    height: 24px;
-    fill: var(--background-title-color);
+    
+    fill: var(--text-color);
 }
 
 .footer-soc-link:hover {
@@ -489,8 +489,10 @@ color: var(--background-color);
 }
 
 .footer-soc-link:focus {
-    bbackground-color: #31d0aa;
+    background-color: #31d0aa;
 }
+
+
 
 /*-----------------customers-----------------*/
 
@@ -537,7 +539,7 @@ color: #8E8F99;
 }
 
 .customers-icon:hover.customers-link {
-    fill: var(--hover-color);
+    color: var(--hover-color);
 }
 
 .customers-link:focus  {
@@ -550,8 +552,6 @@ color: #8E8F99;
 
 
 .customers-icon {
-    width: 104px;
-    height: 56px;
     fill: currentColor;
 }
 
@@ -676,18 +676,18 @@ border-radius: 4px;
 }
 
 .panel-list {
-  
+  display: block;
 }
 
 .link-image {
     text-decoration: none
 }
 
-.image-item:hover {
+.panel-list :hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.image-item:focus {
+.panel-list:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
