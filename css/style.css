@@ -9,7 +9,7 @@
     --text-color: #f4f4fd;
 }
 
-*{
+* {
     box-sizing: border-box  ;
 }
 
@@ -140,19 +140,18 @@ padding: 24px 0 24px;
 
 /*--------------------------HERO----------------------*/
 .hero {
-    padding: 188px 0; 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    padding: 188px 0 188px 0; 
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-       
+    max-width: 1440px;  
 }
 
 
 
 .hero-container{
-    margin: 0 auto;
-    max-width: 1440px;
+        
 }
 
 .hero-title {
@@ -238,8 +237,7 @@ margin-left: auto; margin-right: auto;
 } */
 
   .about-sco-icons {
-    width: 64px;
-    height: 64px;
+    
   }
 
   .about-soc-link {
@@ -391,8 +389,7 @@ text-align: center;
 }
 
 .team-soc-icons {
-    
-    fill: var(--background-title-color);
+    fill: var(--text-color);
 }
 
 /*--------------------footer---------------------------*/
@@ -538,7 +535,7 @@ color: #8E8F99;
     border-color: var(--hover-color);
 }
 
-.customers-icon:hover.customers-link {
+.customers-icon:hover {
     color: var(--hover-color);
 }
 
@@ -546,8 +543,8 @@ color: #8E8F99;
     border-color: var(--hover-color);
 }
 
-.customers-link:focus.customers-icon {
-    fill: var(--hover-color);
+.customers-icon:focus {
+    color: var(--hover-color);
 }
 
 
@@ -662,6 +659,7 @@ border-radius: 4px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    width: 360px;
 }
 
 
@@ -683,11 +681,11 @@ border-radius: 4px;
     text-decoration: none
 }
 
-.panel-list :hover {
+.image-card:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.panel-list:focus {
+.image-card:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
